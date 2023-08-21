@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-# import cv2
+import cv2
 
 
 # Classes of trafic signs
@@ -151,7 +151,7 @@ def test_on_img(img):
     image = image.convert('L')
     image = image.resize((32,32))
     image = np.array(image)
-    # image = preprocessing(image)
+    image = preprocessing(image)
     data.append(image)
     X_test=np.array(data)
     # print(X_test.shape)
