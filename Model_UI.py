@@ -130,8 +130,8 @@ classes = {
     121 : ' Refreshments ',
 }
 
-from keras.models import load_model
-model = load_model('TSR121_model.h5')
+import keras.models
+model = keras.models.load_model('TSR121_model.h5')
 
 def grayscale(img):
     img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
