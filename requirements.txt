@@ -1,1 +1,2 @@
-opencv-python-headless
+cv2
+keras.models
