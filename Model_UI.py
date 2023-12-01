@@ -159,7 +159,7 @@ def test_on_img(img):
     predictions = model.predict(X_test)
     Y_pred = np.argmax(predictions, axis=1)
     if predictions[0, Y_pred] < 0.75:
-        return image, 122
+        return image, [122]
     return image,Y_pred
 
 
